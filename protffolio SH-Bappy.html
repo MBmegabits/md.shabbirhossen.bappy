@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Shabbir Hossen Bappy | CSE Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { background-color: #0a0a0a; color: #e0e0e0; cursor: none; overflow-x: hidden; font-family: 'Inter', sans-serif; }
+        .electric-glow { text-shadow: 0 0 15px rgba(0, 150, 255, 0.7); }
+        .glass-card { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(0, 150, 255, 0.1); border-radius: 20px; transition: all 0.3s ease; position: relative; }
+        .glass-card:hover { border-color: rgba(0, 150, 255, 0.5); box-shadow: 0 0 20px rgba(0, 150, 255, 0.1); }
+        #cursor-follower { position: fixed; width: 12px; height: 12px; background: #0096ff; border-radius: 50%; pointer-events: none; z-index: 9999; transition: transform 0.1s ease; mix-blend-mode: difference; }
+        .marquee-content { display: inline-block; animation: marquee 50s linear infinite; white-space: nowrap; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .experience-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+        .status-badge { font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; background: rgba(0, 255, 100, 0.2); color: #00ff64; border: 1px solid #00ff64; }
+        .project-btn { border: 1px solid rgba(0, 150, 255, 0.3); padding: 8px 16px; border-radius: 8px; font-size: 0.8rem; transition: all 0.3s; text-align: center; display: block; width: 100%; margin-top: 15px; }
+        .project-btn:hover { background: #0096ff; color: black; box-shadow: 0 0 15px #0096ff; }
+        .logo-box { width: 45px; height: 45px; border-radius: 10px; background: rgba(255,255,255,0.05); padding: 5px; object-fit: contain; margin-bottom: 12px; }
+    </style>
+</head>
+<body>
+
+    <div id="cursor-follower"></div>
+
+    <section id="hero" class="h-screen flex flex-col justify-center items-center text-center px-4 relative">
+        <div id="vanta-canvas" class="absolute inset-0 -z-10"></div>
+        <div class="relative z-10" data-aos="fade-down" data-aos-duration="1200">
+            <h1 class="text-5xl md:text-8xl font-black electric-glow tracking-tighter mb-4">Md. Shabbir Hossen Bappy</h1>
+            <p class="text-lg md:text-2xl font-light text-blue-300 opacity-80 max-w-2xl mx-auto">Computer Science & Engineering Undergraduate | Leadership-Focused | Brand Strategist</p>
+            <div class="mt-12 w-48 h-48 rounded-2xl border-2 border-blue-500/50 mx-auto overflow-hidden rotate-3 hover:rotate-0 transition-transform duration-500 bg-gray-900 shadow-2xl flex items-center justify-center">
+                <img src="https://drive.google.com/thumbnail?id=1ljtKwf66qK4w8E2R8MgOtIbcKM_zOyrh&sz=w1000" alt="Md. Shabbir Hossen Bappy" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-blue-950/20 py-10 border-y border-blue-500/20 overflow-hidden">
+        <div class="marquee-content flex items-center gap-16">
+            <div class="flex items-center gap-16 text-xl font-bold uppercase tracking-widest text-blue-400/60">
+                <span class="text-white normal-case italic font-medium">"Assalamualaikum, I'm Shabbir Hossen Bappy. I'm a CSE student at ISU with a background as a BNCC Cadet, combining technical coding skills in C++ and Java."</span>
+
+            </div>
+            <div class="flex items-center gap-16 text-xl font-bold uppercase tracking-widest text-blue-400/60">
+                <span class="text-white normal-case italic font-medium">"Assalamualaikum, I'm Shabbir Hossen Bappy. I'm a CSE student at ISU with a background as a BNCC Cadet, combining technical coding skills in C++ and Java."</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="max-w-7xl mx-auto py-24 px-6">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4"><span class="h-1 w-12 bg-blue-500"></span> Professional Experience & Leadership</h2>
+        <div class="experience-grid">
+            <div class="glass-card p-6 tilt-card" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4"><img src="https://drive.google.com/thumbnail?id=1psdCK6IGMNUdySvi9bl4IL4V8lIqMqP1&sz=w1000" alt="PH" class="logo-box"><span class="status-badge">ACTIVE</span></div>
+                <h3 class="text-xl font-bold text-blue-400">Programming Hero</h3>
+                <p class="font-semibold">Campus Hero</p><p class="text-sm text-gray-500 mt-1">18 Feb 2026 – Present</p>
+            </div>
+            <div class="glass-card p-6 tilt-card" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4"><img src="https://drive.google.com/thumbnail?id=1wapUd9eQpW-KQnpF0EKqi7d_H9uCZuZh&sz=w1000" alt="Quest" class="logo-box"><span class="status-badge">ACTIVE</span></div>
+                <h3 class="text-xl font-bold text-blue-400">Quest Educare</h3>
+                <p class="font-semibold">Campus Ambassador</p><p class="text-sm text-gray-500 mt-1">Jan 2026 – Present</p>
+            </div>
+            <div class="glass-card p-6 tilt-card" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4"><img src="https://drive.google.com/thumbnail?id=1QDmo0oTnr8jd2TFyFVDda6XpXvY5_3nh&sz=w1000" alt="IC" class="logo-box"><span class="status-badge">ACTIVE</span></div>
+                <h3 class="text-xl font-bold text-blue-400">Interactive Cares</h3>
+                <p class="font-semibold">Campus Leader</p><p class="text-sm text-gray-500 mt-1">Dec 2025 – Present</p>
+            </div>
+            <div class="glass-card p-6 tilt-card" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4"><img src="https://drive.google.com/thumbnail?id=1oj7NY3bSDf54PbxxEZfl7YbRG4Plea6V&sz=w1000" alt="SF" class="logo-box"><span class="status-badge">ACTIVE</span></div>
+                <h3 class="text-xl font-bold text-blue-400">Sanskaran Foundation</h3>
+                <p class="font-semibold">Assistant Secretary - HRD</p><p class="text-sm text-gray-500 mt-1">Jul 2025 – Present</p>
+            </div>
+            <div class="glass-card p-6 tilt-card" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4"><img src="https://drive.google.com/thumbnail?id=13xdFSpTI_rY36gJ_kJTSgLib75nR7drU&sz=w1000" alt="Oraimo" class="logo-box"><span class="status-badge">ACTIVE</span></div>
+                <h3 class="text-xl font-bold text-blue-400">oraimo</h3>
+                <p class="font-semibold">Campus Ambassador</p><p class="text-sm text-gray-500 mt-1">Jun 2025 – Present</p>
+            </div>
+            <div class="glass-card p-6 tilt-card" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4"><img src="https://drive.google.com/thumbnail?id=1QPmgdnNRq1ebpp8g9ln4RNkhIWAkwSOb&sz=w1000" alt="Phitron" class="logo-box"><span class="status-badge">ACTIVE</span></div>
+                <h3 class="text-xl font-bold text-blue-400">Phitron</h3>
+                <p class="font-semibold">Campus Ambassador</p><p class="text-sm text-gray-500 mt-1">Jun 2025 – Present</p>
+            </div>
+            <div class="glass-card p-6 tilt-card" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4"><img src="https://drive.google.com/thumbnail?id=1gG-aGDG07BTOm5oiyBuP3tzqv1Cv0B72&sz=w1000" alt="GS" class="logo-box"><span class="status-badge">ACTIVE</span></div>
+                <h3 class="text-xl font-bold text-blue-400">Green Savers</h3>
+                <p class="font-semibold">Green Ambassador</p><p class="text-sm text-gray-500 mt-1">Jul 2025 – Present</p>
+            </div>
+            <div class="glass-card p-6 tilt-card opacity-80" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4"><img src="https://drive.google.com/thumbnail?id=1jOs-5onNIhfP95dhy-J0Gx_RkA88s4LD&sz=w1000" alt="BNCC" class="logo-box"></div>
+                <h3 class="text-xl font-bold text-gray-400">BNCC</h3>
+                <p class="font-semibold">Cadet</p><p class="text-sm text-gray-500 mt-1">Sept 2020 – Sept 2022</p>
+            </div>
+            <div class="glass-card p-6 tilt-card opacity-80" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-4"><img src="https://drive.google.com/thumbnail?id=1ZVw77Fv6dvyifh9Adr_3X2OVnzUb62o-&sz=w1000" alt="ATN" class="logo-box"></div>
+                <h3 class="text-xl font-bold text-gray-400">ATN Bangla</h3>
+                <p class="font-semibold">Campus Ambassador</p><p class="text-sm text-gray-500">Jun 2023 – Jun 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-12 px-6">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4"><span class="h-1 w-12 bg-blue-500"></span> Github Project Templates</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="glass-card p-8 flex flex-col justify-between" data-aos="zoom-in">
+                <div><img src="REPLACE_WITH_GITHUB_ICON_URL" alt="Logo" class="logo-box"><h3 class="text-2xl font-bold mb-3">NovaNexus</h3><p class="text-gray-400 text-sm">Suggests innovation and connectivity.</p></div>
+                <a href="#" class="project-btn">View Repository</a>
+            </div>
+            <div class="glass-card p-8 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="100">
+                <div><img src="REPLACE_WITH_GITHUB_ICON_URL" alt="Logo" class="logo-box"><h3 class="text-2xl font-bold mb-3">QuantifyX</h3><p class="text-gray-400 text-sm">Great for data science, analytics, or AI projects.</p></div>
+                <a href="#" class="project-btn">View Repository</a>
+            </div>
+        
+            <div class="glass-card p-8 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="200">
+                <div><img src="REPLACE_WITH_GITHUB_ICON_URL" alt="Logo" class="logo-box"><h3 class="text-2xl font-bold mb-3">EduSphere</h3><p class="text-gray-400 text-sm">Ideal for education-focused platforms.</p></div>
+                <a href="#" class="project-btn">View Repository</a>
+            </div>
+            <div class="glass-card p-8 flex flex-col justify-between" data-aos="zoom-in">
+                <div><img src="REPLACE_WITH_GITHUB_ICON_URL" alt="Logo" class="logo-box"><h3 class="text-2xl font-bold mb-3">CodeHarbor</h3><p class="text-gray-400 text-sm">A safe place where code "anchors" and grows.</p></div>
+                <a href="#" class="project-btn">View Repository</a>
+            </div>
+            <div class="glass-card p-8 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="100">
+                <div><img src="REPLACE_WITH_GITHUB_ICON_URL" alt="Logo" class="logo-box"><h3 class="text-2xl font-bold mb-3">Synaptech</h3><p class="text-gray-400 text-sm">Blend of "synapse" and "technology" (good for AI/ML projects).</p></div>
+                <a href="#" class="project-btn">View Repository</a>
+            </div>
+            <div class="glass-card p-8 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="200">
+                <div><img src="REPLACE_WITH_GITHUB_ICON_URL" alt="Logo" class="logo-box"><h3 class="text-2xl font-bold mb-3">OptiCore</h3><p class="text-gray-400 text-sm">Sounds strong and optimized, great for system/software projects.</p></div>
+                <a href="#" class="project-btn">View Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto py-20 px-6">
+        <div class="glass-card p-12 relative overflow-hidden" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold mb-10 text-blue-400 text-center">Educational Journey</h2>
+            <div class="space-y-12">
+                <div class="flex gap-6 border-l-2 border-blue-500 pl-6 relative">
+                    <img src="https://drive.google.com/thumbnail?id=1nE7OTasO8JXq4XQ6wd2Aobg2dil7euYg&sz=w1000" alt="ISU" class="logo-box"><div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <div><h4 class="text-xl font-bold">B.Sc. in CSE</h4><p class="text-blue-300">International Standard University</p></div>
+                </div>
+                <div class="flex gap-6 border-l-2 border-gray-700 pl-6 relative">
+                    <img src="https://drive.google.com/thumbnail?id=16LgWvHhDTfiUVdhh1V_KkQGniNsF0UoC&sz=w1000" alt="GMMSC" class="logo-box"><div class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-700 rounded-full"></div>
+                    <div><h4 class="text-xl font-bold">HSC | GPA: 4.42</h4><p class="text-gray-400">Govt. Mohammadpur Model School & College</p></div>
+                </div>
+                <div class="flex gap-6 border-l-2 border-gray-700 pl-6 relative">
+                    <img src="https://drive.google.com/thumbnail?id=11b4iw7yvwA-okA77Es7dzyruhvNEuw3r&sz=w1000" alt="MSHS" class="logo-box"><div class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-700 rounded-full"></div>
+                    <div><h4 class="text-xl font-bold">SSC | GPA: 4.94</h4><p class="text-gray-400">Meitree Shonga High School</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-20 px-6 text-center border-t border-blue-900/30">
+        <h2 class="text-4xl font-black mb-6 electric-glow">Ready to Collaborate?</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-8 text-lg font-medium">
+            <a href="https://www.facebook.com/md.shabbirhossen.bappy" target="_blank" 
+           class="hover:scale-110 transition-transform">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                 alt="Facebook"
+                 class="w-6 h-6">
+        </a>
+            <a href="mailto:shabbirhossenbappy@outlook.com" class="hover:text-blue-400 transition-colors">shabbirhossenbappy@outlook.com</a>
+            <a href="tel:+8801830755445" class="hover:text-blue-400 transition-colors">+8801830755445</a>
+
+            <a href="https://www.linkedin.com/in/md-shabbir-hossen-bappy-027084253/" target="_blank" 
+           class="hover:scale-110 transition-transform">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+                 alt="LinkedIn"
+                 class="w-6 h-6">
+        </a>
+
+
+
+        </div>
+    </footer>
+
+    <script>
+        VANTA.NET({ el: "#vanta-canvas", mouseControls: true, touchControls: true, minHeight: 200.0, minWidth: 200.0, scale: 1.0, scaleMobile: 1.0, color: 0x0096ff, backgroundColor: 0x0a0a0a, points: 10.0, maxDistance: 24.0, spacing: 16.0 });
+        AOS.init({ duration: 1000, once: true });
+        const cursor = document.getElementById('cursor-follower');
+        document.addEventListener('mousemove', (e) => { cursor.style.left = e.clientX + 'px'; cursor.style.top = e.clientY + 'px'; });
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.transform = `perspective(1000px) rotateX(${y * -15}deg) rotateY(${x * 15}deg) scale(1.02)`;
+            });
+            card.addEventListener('mouseleave', () => { card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)'; });
+        });
+    </script>
+</body>
+</html>
